@@ -12,7 +12,7 @@ pipeline {
                 // Remove the old one if it exists
                 sh 'docker rm -f test-bridge || true'
                 // Run the new one just like your original command
-                sh 'docker run -d --name test-bridge -p 80:80 nginx:latest'
+                sh 'docker run -d --name test-bridge -p 81:80 nginx:latest'
             }
         }
     }
